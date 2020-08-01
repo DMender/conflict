@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseguard conflict tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/d93912ae3b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    Server: <input id="server" type="text"><br />
+    Action One: <input id="actionOne" type="text">
+    <button id="oneBtn">Reveal</button><br />
+    Action Two: <input id="actionTwo" type="text">
+    <button id="twoBtn">Reveal</button><br />
+    Action Three: <input id="actionThree" type="text">
+    <button id="threeBtn">Reveal</button><br />
+    <button id="saveBtn">Commit</button>
+        <!-- Load firebase CDN files -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    
+        <script>
+            // Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAije5M0yEYmGyAuofXrXHMr0XRPXUmjfw",
+                authDomain: "mouseguard-fee40.firebaseapp.com",
+                databaseURL: "https://mouseguard-fee40.firebaseio.com",
+                projectId: "mouseguard-fee40",
+                storageBucket: "mouseguard-fee40.appspot.com",
+                messagingSenderId: "952297786783",
+                appId: "1:952297786783:web:800cd588154852adb081aa"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+    
+</body>
+
+</html>
